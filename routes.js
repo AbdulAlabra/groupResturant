@@ -21,19 +21,17 @@ app.get("/reserve", function(req, res) {
   });
   
 
-//   app.post("/reserve", function(req, res) {
+  app.post("/reserve", function(req, res) {
     
-//     var newReserve = req.body;
+    var newReserve = req.body;
   
    
-//     newReserve.routeName = newReserve.name.replace(/\s+/g, "").toLowerCase();
+    newReserve.routeName = newReserve.name.replace(/\s+/g, "").toLowerCase();
+      console.log(newReserve);
+     reservation.push(newReserve);
   
-//     console.log(newReserve);
-
-//     reservation.push(newReserve);
-  
-//     res.json(newReserve);
-//   });
+     res.json(newReserve);
+   });
   
   // Starts the server to begin listening
   // =============================================================
