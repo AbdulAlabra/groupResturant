@@ -2,21 +2,23 @@ var express = require("express");
 var fs = require("fs"); 
 var bodyParser = require("body-parser");
 var app = express(); 
+var path = require ("path"); 
 var PORT = 3000; 
 
 app.get("/", function(req, res){
-    //res.sendFile(path.join(__dirname, "xxx.hmtl"));
+    res.sendFile(path.join(__dirname, "hot-express.html"));
     console.log("home page");  
-    var html = "<html><title>routes</title><body><h1>home page</h1></body></html>"
+    //var html = "<html><title>routes</title><body><h1>home page</h1></body></html>"
+    
 })
 
 app.get("/reserve", function(req, res) {
-    //res.sendFile(path.join(__dirname, "xxxx.html"));
+    res.sendFile(path.join(__dirname, "Reservation.html"));
     console.log("reserve page");
   });
   
-  app.get("/table", function(req, res) {
-    //res.sendFile(path.join(__dirname, "xxx.html"))
+  app.get("/view-tables", function(req, res) {
+    res.sendFile(path.join(__dirname, "view-tables.html"))
     console.log("table page");
   });
   
