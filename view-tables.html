@@ -1,66 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <title>Hot-Express</title>
 </head>
+
 <body>
     <div class="container">
         <!-- Jumbotron -->
         <div class="jumbotron">
-                <h1 class="text-center"><span class="fa fa-fire"></span> Hot Restaurant</h1>
-                <hr>
-                <h2 class="text-center">Current Reservations and Waiting List</h2>
-                <br>
-          
-                <div class="text-center">
-                  <a href="/reserve"><button class="btn btn-lg btn-danger"><span class="fa fa-credit-card"></span> Make Reservation</button></a>
-                  <a href="/"><button class="btn btn-lg btn-default"><span class="fa fa-home"></span></button></a>
-                </div>
-                </div>
+            <h1 class="text-center"><span class="fa fa-fire"></span> Hot Restaurant</h1>
+            <hr>
+            <h2 class="text-center">Current Reservations and Waiting List</h2>
+            <br>
 
-<!-- tables -->
-<div class="row">
-        <div class="col-lg-12">
-  
-          <!-- Current Tables in Use -->
-          <div class="card">
-            <div class="card-header">
-              <h4>Current Reservations</h4>
+            <div class="text-center">
+                <a href="/reserve"><button class="btn btn-lg btn-danger"><span class="fa fa-credit-card"></span> Make Reservation</button></a>
+                <a href="/"><button class="btn btn-lg btn-default"><span class="fa fa-home"></span></button></a>
             </div>
-            <div class="card-body">
-              <ul id="tableList" class="list-group"><li class="list-group-item mt-4"><h2>Table #1</h2><hr><h2>ID: 4</h2><h2>Name: HELLOOOOOOOO</h2><h2>Email: 3</h2><h2>Phone: 555-444-3333</h2></li></ul>
-            </div>
-          </div>
-  
-          <!-- Waiting List Card -->
-          <div class="card mt-4">
-            <div class="card-header">
-              <h4>Waiting List</h4>
-            </div>
-            <div class="card-body">
-              <ul id="waitList" class="list-group"></ul>
-            </div>
-          </div>
         </div>
-      </div>
 
-<!-- footer -->
+        <!-- tables -->
+        <div class="row">
+            <div class="col-lg-12">
 
-<footer class="footer">
-        <div class="container">
-          <p><a href="#">API Table Link</a> | <a href="#">API Wait List</a>
-        </p></div>
-      </footer>
+                <!-- Current Tables in Use -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Current Reservations</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul id="tableList" class="list-group">
+                            <li class="list-group-item mt-4">
+                                <h2>Table #1</h2>
+                                <hr>
+                                <h2>ID: 4</h2>
+                                <h2>Name: HELLOOOOOOOO</h2>
+                                <h2>Email: 3</h2>
+                                <h2>Phone: 555-444-3333</h2>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-<!-- end container div -->
+                <!-- Waiting List Card -->
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <h4>Waiting List</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul id="waitList" class="list-group"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+
+        <footer class="footer">
+            <div class="container">
+                <p><a href="#">API Table Link</a> | <a href="#">API Wait List</a>
+                </p>
+            </div>
+        </footer>
+
+        <!-- end container div -->
     </div>
-    
+
 </body>
+
 </html>
